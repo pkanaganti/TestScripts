@@ -34,7 +34,6 @@ class admin_login(unittest.TestCase):
         # find element by xpath, click on delete service
         elem = driver.find_element_by_xpath("//*[@id='app-layout']/div[2]/div/div/div[2]/table/tbody/tr[5]/td[9]/a").click()
         time.sleep(3)
-        driver.switch_to.alert.accept()
 
 
     def tearDown(self):

@@ -33,17 +33,17 @@ class admin_login(unittest.TestCase):
         time.sleep(2)
         # find element by xpath, click on edit product
         elem = driver.find_element_by_xpath("//*[@id='app-layout']/div[2]/div/div/div[2]/table/tbody/tr[4]/td[7]/a").click()
-        time.sleep(3)
+        time.sleep(2)
 
         elem = driver.find_element_by_id("id_quantity")
         elem.clear()
         elem.send_keys("80")
-        time.sleep(2)
+        time.sleep(1)
 
         elem = driver.find_element_by_id("id_charge")
         elem.clear()
         elem.send_keys("250")
-        time.sleep(2)
+        time.sleep(1)
         # xpath to save
         elem = driver.find_element_by_xpath("//*[@id='app-layout']/div[2]/div/div/form/button").click()
         time.sleep(5)
